@@ -23,7 +23,7 @@ public class ApiClient {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		ApiClient apiClient = new ApiClient("appId", "appSecret", "https://gateway.douyidou.cc/api");
+		ApiClient apiClient = new ApiClient("appId", "appSecret", "https://gateway.diadi.cn/api");
 		Map<String, Object> response = apiClient.make("url");
 		System.out.println(response);
 	}

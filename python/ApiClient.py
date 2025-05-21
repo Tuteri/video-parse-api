@@ -61,5 +61,5 @@ class ApiClient:
 
 
 # 使用示例
-api = ApiClient("", "", "https://gateway.douyidou.cc/api")
+api = ApiClient("", "", "https://gateway.diadi.cn/api")
 print(api.make("url"))

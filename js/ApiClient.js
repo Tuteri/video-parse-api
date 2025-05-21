@@ -60,7 +60,7 @@ class ApiClient {
 
 // 示例调用
 (async () => {
-  const api = new ApiClient("18207536", "7QXmPfMDdhgOrjGDjuVYctEMFQSKWNXTw", "https://gateway.douyidou.cc/api");
+  const api = new ApiClient("18207536", "7QXmPfMDdhgOrjGDjuVYctEMFQSKWNXTw", "https://gateway.diadi.cn/api");
   try {
     const result = await api.make("url");
     console.log(result);

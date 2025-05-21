@@ -77,5 +77,5 @@ class ApiClient
         return md5($preStr);
     }
 }
-$api = new ApiClient("appId", "appSecret", "https://gateway.douyidou.cc/api");
+$api = new ApiClient("appId", "appSecret", "https://gateway.diadi.cn/api");
 print($api->make("url"));
