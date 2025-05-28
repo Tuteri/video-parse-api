@@ -46,5 +46,5 @@
 | Youtube      | ✔            |
 | instagram    | ✔            |
 | facebook     | ✔            |
-| 30+          | ✔            |
+| 更多         | ✔            |
 
