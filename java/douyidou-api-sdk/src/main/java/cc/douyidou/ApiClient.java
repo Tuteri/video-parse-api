@@ -23,7 +23,7 @@ public class ApiClient {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		ApiClient apiClient = new ApiClient("appId", "appSecret", "https://gateway.diadi.cn/api");
+		ApiClient apiClient = new ApiClient("appId", "appSecret", "https://gateway.diadi.cn");
 		Map<String, Object> response = apiClient.make("url");
 		System.out.println(response);
 	}
@@ -35,7 +35,7 @@ public class ApiClient {
 	 * @throws Exception
 	 */
 	public Map<String, Object> make(String url) throws Exception {
-		String endpoint = "/67d27c333e192";
+		String endpoint = "/api/parse";
 		Map<String,String> params = new HashMap<>();
 		params.put("url", url);
 		return sendGetRequest(endpoint, params);

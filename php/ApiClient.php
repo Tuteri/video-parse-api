@@ -15,7 +15,7 @@ class ApiClient
 
     public function make(string $url): array
     {
-        $endpoint = '/67d27c333e192';
+        $endpoint = '/api/parse';
         return $this->sendGetRequest($endpoint, ['url' => $url]);
     }
 
@@ -77,5 +77,5 @@ class ApiClient
         return md5($preStr);
     }
 }
-$api = new ApiClient("appId", "appSecret", "https://gateway.diadi.cn/api");
+$api = new ApiClient("AppId", "AppSecret", "https://gateway.diadi.cn");
 print($api->make("url"));

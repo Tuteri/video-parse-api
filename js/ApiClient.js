@@ -10,7 +10,7 @@ class ApiClient {
   }
 
   async make(url) {
-    const endpoint = '/67d27c333e192';
+    const endpoint = '/api/parse';
     return await this.sendGetRequest(endpoint, { url });
   }
 
@@ -60,7 +60,7 @@ class ApiClient {
 
 // 示例调用
 (async () => {
-  const api = new ApiClient("18207536", "7QXmPfMDdhgOrjGDjuVYctEMFQSKWNXTw", "https://gateway.diadi.cn/api");
+  const api = new ApiClient("AppId", "AppSecret", "https://gateway.diadi.cn");
   try {
     const result = await api.make("url");
     console.log(result);
